@@ -1,0 +1,35 @@
+body,
+button,
+input,
+select,
+textarea {
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 1.5;
+}
+
+.img-center {
+margin-right: auto;
+margin-left: auto;
+}
+
+.navbar {
+background-color : #000;
+}
+
+.grey-footer {
+background-color: #EEE;
+}
+
+.footer-center {
+font-family: 'Roboto', sans-serif;
+text-align: center;
+font-size: 18px;
+line-height: 1em;
+color: #999;
+text-rendering: optimizelegibility;
+font-weight: 300;
+margin-top: 20px;
+margin-bottom: 20px;
+}
+
