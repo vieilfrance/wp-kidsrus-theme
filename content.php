@@ -23,4 +23,16 @@
 
 	</header><!-- .entry-header -->
 
+	<?php if ( is_search() ) : ?>
+	<div class="entry-summary">
+		<?php the_excerpt(); ?>
+	</div><!-- .entry-summary -->
+	<?php else : ?>
+	<div class="entry-content">
+		<?php
+			the_content( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'twentyfourteen' ) );
+		?>
+	</div><!-- .entry-content -->
+	<?php endif; ?>
+
 </article><!-- #post-## -->

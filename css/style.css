@@ -8,17 +8,37 @@ textarea {
 	line-height: 1.5;
 }
 
+body {
+background-color: #FDF;
+}
+
 .img-center {
 margin-right: auto;
 margin-left: auto;
 }
 
-.navbar {
-background-color : #000;
+.img-home {
+background-color: #FFF;
+padding-top: 20px;
+padding-top: 10px;
+padding-bottom: 10px;
+padding-left: 10px;
+padding-right: 10px;
+color: #FFF;
 }
 
 .grey-footer {
 background-color: #EEE;
+}
+
+.nav-item {
+background-color: #F6CED8;
+margin-left:5px;
+margin-right:5px;
+}
+
+.nav-item:hover {
+background-color: #F5A9BC;
 }
 
 .footer-center {
@@ -32,4 +52,3 @@ font-weight: 300;
 margin-top: 20px;
 margin-bottom: 20px;
 }
-

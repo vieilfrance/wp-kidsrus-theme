@@ -26,7 +26,7 @@
   </head>
   <body>
 
-  <nav class=" navbar navbar-inverse" role="navigation">
+  <nav class=" navbar navbar-default" role="navigation">
     <div class="container">
 	<div class="row">
 	<div class="col-xs-12 col-sm-3">
@@ -43,12 +43,12 @@
 	<div class="col-xs-12 col-sm-8">
       <div class="collapse navbar-collapse " id="navbar-collapse">
         <ul class=" nav navbar-nav ">
-      <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>/pedagogie/">Pédagogie</a></li>
-      <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>/category/services/">Services</a></li>
-		  <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>/category/infos/">Infos pratiques</a></li>
-      <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>/l-equipe/">L'équipe</a></li>
-		  <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>/contact/">Contact</a></li>
-		  <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>/parents/">Espace parents</a></li>
+      <li class="nav-item"><a href="<?php echo esc_url( home_url( '/' ) ); ?>/pedagogie/">Pédagogie</a></li>
+      <li class="nav-item"><a href="<?php echo esc_url( home_url( '/' ) ); ?>/category/services/">Services</a></li>
+		  <li class="nav-item"><a href="<?php echo esc_url( home_url( '/' ) ); ?>/category/infos/">Infos pratiques</a></li>
+      <li class="nav-item"><a href="<?php echo esc_url( home_url( '/' ) ); ?>/l-equipe/">L'équipe</a></li>
+		  <li class="nav-item"><a href="<?php echo esc_url( home_url( '/' ) ); ?>/contact/">Contact</a></li>
+		  <li class="nav-item"><a href="<?php echo esc_url( home_url( '/' ) ); ?>/parents/">Espace parents</a></li>
         </ul>
       </div>
 	</div>

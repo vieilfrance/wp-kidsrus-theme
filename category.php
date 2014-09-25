@@ -9,20 +9,23 @@
 
 get_header(); ?>
 
+<div class="container">
+	<div class="row">
+		<div class="col-md-12">
+
 			<?php if ( have_posts() ) : ?>
 
-				<h1 class="archive-title"><?php printf( __( 'Category Archives: %s', 'twentyfourteen' ), single_cat_title( '', false ) ); ?></h1>
+				<h1 class="archive-title"><?php printf( __( '%s', 'twentyfourteen' ), single_cat_title( '', false ) ); ?></h1>
 
 			<?php
 					// Start the Loop.
 					while ( have_posts() ) : the_post();
 
-					/*
-					 * Include the post format-specific template for the content. If you want to
-					 * use this in a child theme, then include a file called called content-___.php
-					 * (where ___ is the post format) and that will be used instead.
-					 */
-					get_template_part( 'content', get_post_format() );
+			if ( is_single() ) :
+				the_title( '<h1 class="entry-title">', '</h1>' );
+			else :
+				the_title( '<h1 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h1>' );
+			endif;
 
 					endwhile;
 
@@ -32,6 +35,8 @@ get_header(); ?>
 
 				endif;
 			?>
-
+		</div>
+	</div>
+</div>
 <?php
 get_footer();
