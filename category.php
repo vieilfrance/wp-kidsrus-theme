@@ -9,7 +9,7 @@
 
 get_header(); ?>
 
-<div class="container">
+<div class="container white">
 	<div class="row">
 		<div class="col-md-12">
 
@@ -22,9 +22,9 @@ get_header(); ?>
 					while ( have_posts() ) : the_post();
 
 			if ( is_single() ) :
-				the_title( '<h1 class="entry-title">', '</h1>' );
+				the_title( '<h1 >', '</h1>' );
 			else :
-				the_title( '<h1 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h1>' );
+				the_title( '<h1 ><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h1>' );
 			endif;
 
 					endwhile;
