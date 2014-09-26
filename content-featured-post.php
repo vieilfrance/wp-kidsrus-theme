@@ -8,7 +8,7 @@
  */
 ?>
 <div class="featured-thumbnail img-center">
-<?php
-		the_post_thumbnail('full',array('class' => 'img-responsive img-center')); 
-		?>
-	</div>
+	<?php
+	the_post_thumbnail('full',array('class' => 'img-responsive img-center')); 
+	?>
+</div>

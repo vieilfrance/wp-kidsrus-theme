@@ -12,6 +12,7 @@ get_header(); ?>
 	<div class="row white">
 		<div class="col-md-12">
 			<div id="content" class="site-content" role="main">
+
 			<?php
 				// Start the Loop.
 				while ( have_posts() ) : the_post();

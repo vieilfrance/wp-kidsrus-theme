@@ -11,7 +11,6 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-
 	<header class="entry-header">
 		<?php
 			if ( is_single() ) :
@@ -19,8 +18,11 @@
 			else :
 				the_title( '<h1 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h1>' );
 			endif;
+		if (has_post_thumbnail()) {
+		// Include the featured content template.
+		get_template_part( 'content', 'featured-post' );
+		}
 		?>
-
 	</header><!-- .entry-header -->
 
 	<?php if ( is_search() ) : ?>
