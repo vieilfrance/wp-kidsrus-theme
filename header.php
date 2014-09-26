@@ -19,13 +19,13 @@
     <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script> 
     <script type="text/javascript" src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
   	<link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
-    <link href="<?php echo get_template_directory_uri(); ?>/css/style.css" type="text/css" rel="stylesheet">
+    <link href="<?php echo get_template_directory_uri(); ?>/style.css" type="text/css" rel="stylesheet">
 
 <?php wp_head(); ?>
 
   </head>
   <body>
-
+  <div class="site">
   <nav class=" navbar navbar-default" role="navigation">
     <div class="container">
 	<div class="row">

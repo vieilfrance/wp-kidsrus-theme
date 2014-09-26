@@ -9,7 +9,7 @@ textarea {
 }
 
 body {
-background-color: #FDF;
+background : #FDF url(assets/bg.png) repeat fixed ;
 }
 
 .featured-thumbnail {

@@ -6,7 +6,6 @@
  * @subpackage Kidsrus
  * @since Kidsrus 1.0
  */
-
 get_header(); ?>
 
 <div class="container">
