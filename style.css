@@ -75,6 +75,16 @@ color: #FFF;
 
 .grey-footer {
 background-color: #EEE;
+border-top: 1px solid #999;
+color: #999;
+font-weight: 300;
+}
+
+.invert-footer {
+background-color: #222 ;
+border-top: 10px solid #DDD;
+color: #444;
+font-weight: 700;
 }
 
 .nav-item {
@@ -92,9 +102,7 @@ font-family: 'Roboto', sans-serif;
 text-align: center;
 font-size: 18px;
 line-height: 1em;
-color: #999;
 text-rendering: optimizelegibility;
-font-weight: 300;
 margin-top: 20px;
 margin-bottom: 20px;
 }
