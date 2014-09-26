@@ -48,7 +48,7 @@
         <a class="dropdown-toggle" data-toggle="dropdown" href="<?php echo esc_url( home_url( '/' ) ); ?>/category/services/">Services<span class="caret"></span></a>
         <ul class="dropdown-menu" role="menu">
           <?php
-          $query = new WP_Query(array('cat' => '3','order' => 'DESC')); 
+          $query = new WP_Query(array('category_name' => 'services','order' => 'DESC')); 
           if($query->have_posts()) : while($query->have_posts()) : $query->the_post();
             // Start the Loop.
               the_title( '<li><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></li>' );
@@ -62,7 +62,7 @@
         <a class="dropdown-toggle" data-toggle="dropdown" href="<?php echo esc_url( home_url( '/' ) ); ?>/category/infos/">Infos pratiques<span class="caret"></span></a>
         <ul class="dropdown-menu" role="menu">
           <?php
-          $query = new WP_Query(array('cat' => '4','order' => 'DESC')); 
+          $query = new WP_Query(array('category_name' => 'infos','order' => 'DESC')); 
           if($query->have_posts()) : while($query->have_posts()) : $query->the_post();
             // Start the Loop.
               the_title( '<li><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></li>' );
