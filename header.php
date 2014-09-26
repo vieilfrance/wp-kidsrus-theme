@@ -42,7 +42,7 @@
 	</div>
 	<div class="col-xs-12 col-sm-8">
       <div class="collapse navbar-collapse " id="navbar-collapse">
-        <ul class=" nav navbar-nav ">
+        <ul class="nav navbar-nav ">
       <li class="nav-item"><a href="<?php echo esc_url( home_url( '/' ) ); ?>/pedagogie/">Pédagogie</a></li>
       <li class="dropdown">
         <a class="dropdown-toggle" data-toggle="dropdown" href="<?php echo esc_url( home_url( '/' ) ); ?>/category/services/">Services<span class="caret"></span></a>

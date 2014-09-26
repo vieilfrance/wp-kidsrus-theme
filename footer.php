@@ -24,8 +24,8 @@
 					</div>
 				</div>
 				<div class="col-xs-12 col-sm-5">
-					<div><a href="#">Terms &amp; Conditions</a></div>
-					<div><a href="#">Crédits</a></div>
+					<div><a href="<?php echo esc_url( home_url( '/' ) ); ?>/terms-conditions/">Terms &amp; Conditions</a></div>
+					<div><a href="<?php echo esc_url( home_url( '/' ) ); ?>/credits/">Crédits</a></div>
 					<div>contact@xxx.be</div>
 				</div>
 				<div class="col-xs-12 col-sm-2">

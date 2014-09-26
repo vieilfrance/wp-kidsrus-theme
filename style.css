@@ -113,5 +113,12 @@ background-color: #FFF;
 
 .navbar {
 margin-bottom: 0px;
+}
 
+.form-group {
+margin-bottom:0px;
+}
+
+.navbar-collapse {
+text-align: center;
 }
