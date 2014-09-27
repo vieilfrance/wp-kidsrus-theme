@@ -26,59 +26,69 @@
   </head>
   <body>
   <div class="site">
-  <nav class=" navbar navbar-default" role="navigation">
+  <nav class="navbar navbar-default" role="navigation">
     <div class="container">
-	<div class="row">
-	<div class="col-xs-12 col-sm-3">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo('description'); ?></a>
+      <div class="row">
+        <div class="col-xs-12 logo">
+          <div class="logo">
+            <a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/kidzrus-320.jpg"></img>
+            </a>
+          </div>
+        </div>
       </div>
-	</div>
-	<div class="col-xs-12 col-sm-8">
-      <div class="collapse navbar-collapse " id="navbar-collapse">
-        <ul class="nav navbar-nav ">
-      <li class="nav-item"><a href="<?php echo esc_url( home_url( '/' ) ); ?>/pedagogie/">Pédagogie</a></li>
-      <li class="dropdown">
-        <a class="dropdown-toggle" data-toggle="dropdown" href="<?php echo esc_url( home_url( '/' ) ); ?>/category/services/">Services<span class="caret"></span></a>
-        <ul class="dropdown-menu" role="menu">
-          <?php
-          $query = new WP_Query(array('category_name' => 'services','order' => 'DESC')); 
-          if($query->have_posts()) : while($query->have_posts()) : $query->the_post();
-            // Start the Loop.
-              the_title( '<li><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></li>' );
-            endwhile;
-            endif;
-            wp_reset_postdata();
-          ?>
-        </ul>
-      </li>
-      <li class="dropdown">
-        <a class="dropdown-toggle" data-toggle="dropdown" href="<?php echo esc_url( home_url( '/' ) ); ?>/category/infos/">Infos pratiques<span class="caret"></span></a>
-        <ul class="dropdown-menu" role="menu">
-          <?php
-          $query = new WP_Query(array('category_name' => 'infos','order' => 'DESC')); 
-          if($query->have_posts()) : while($query->have_posts()) : $query->the_post();
-            // Start the Loop.
-              the_title( '<li><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></li>' );
-            endwhile;
-            endif;
-            wp_reset_postdata();
-          ?>
-        </ul>
-      </li>
-      <li class="nav-item"><a href="<?php echo esc_url( home_url( '/' ) ); ?>/l-equipe/">L'équipe</a></li>
-		  <li class="nav-item"><a href="<?php echo esc_url( home_url( '/' ) ); ?>/contact/">Contact</a></li>
-		  <li class="nav-item"><a href="<?php echo esc_url( home_url( '/' ) ); ?>/parents/">Espace parents</a></li>
-        </ul>
-      </div>
-	</div>
-	<div class="xs-hidden col-sm-1"></div>
-	</div>
-	</div>
+      <div class="row">
+        <div class="col-xs-12 col-lg-2">
+        </div>
+        <div class="col-xs-12 hidden-lg">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+        </div>
+        <div class="col-xs-12 col-lg-8">
+          <div class="collapse navbar-collapse " id="navbar-collapse">
+            <ul class="nav navbar-nav ">
+              <li class="nav-item"><a href="<?php echo esc_url( home_url( '/' ) ); ?>/pedagogie/">Pédagogie</a></li>
+              <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="<?php echo esc_url( home_url( '/' ) ); ?>/category/services/">Services<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                  <?php
+                  $query = new WP_Query(array('category_name' => 'services','order' => 'DESC')); 
+                  if($query->have_posts()) : while($query->have_posts()) : $query->the_post();
+                    // Start the Loop.
+                      the_title( '<li><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></li>' );
+                    endwhile;
+                    endif;
+                    wp_reset_postdata();
+                  ?>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="<?php echo esc_url( home_url( '/' ) ); ?>/category/infos/">Infos pratiques<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                  <?php
+                  $query = new WP_Query(array('category_name' => 'infos','order' => 'DESC')); 
+                  if($query->have_posts()) : while($query->have_posts()) : $query->the_post();
+                    // Start the Loop.
+                      the_title( '<li><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></li>' );
+                    endwhile;
+                    endif;
+                    wp_reset_postdata();
+                  ?>
+                </ul>
+              </li>
+              <li class="nav-item"><a href="<?php echo esc_url( home_url( '/' ) ); ?>/l-equipe/">L'équipe</a></li>
+        		  <li class="nav-item"><a href="<?php echo esc_url( home_url( '/' ) ); ?>/contact/">Contact</a></li>
+        		  <li class="nav-item"><a href="<?php echo esc_url( home_url( '/' ) ); ?>/parents/">Espace parents</a></li>
+            </ul>
+          </div>
+        </div>
+	     <div class="xs-hidden col-lg-2"></div>
+	   </div>
+	 </div>
   </nav>

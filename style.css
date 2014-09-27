@@ -87,14 +87,16 @@ color: #444;
 font-weight: 700;
 }
 
-.nav-item {
-background-color: #F6CED8;
-margin-left:5px;
-margin-right:5px;
+.nav-item , .dropdown{
+font-family: 'Roboto', sans-serif;
+margin-left:2px;
+margin-right:2px;
+background-color: #CCC;
 }
 
-.nav-item:hover {
-background-color: #F5A9BC;
+.nav-item:hover , .dropdown:hover{
+background-color: #ffcb00;
+color: #FFF;
 }
 
 .footer-center {
@@ -109,10 +111,25 @@ margin-bottom: 20px;
 
 .white {
 background-color: #FFF;
+padding-top:15px;
 }
 
 .navbar {
 margin-bottom: 0px;
+
+}
+
+.navbar-default {
+border-top-color:#FFF;
+border-bottom-color:#FFF;
+border-left-color:#FFF;
+border-right-color:#FFF;
+background-color: #FFF;
+}
+
+.navbar-brand {
+float:none;
+margin : 0 auto; 
 }
 
 .form-group {
@@ -120,5 +137,9 @@ margin-bottom:0px;
 }
 
 .navbar-collapse {
+text-align: center;
+}
+
+.logo {
 text-align: center;
 }
