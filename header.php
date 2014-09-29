@@ -27,7 +27,7 @@
   <body>
   <div class="site">
   <nav class="navbar navbar-default" role="navigation">
-    <div class="container">
+    <div class="container no-padding">
       <div class="row">
         <div class="col-xs-12 logo">
           <div class="logo">
@@ -54,34 +54,8 @@
           <div class="collapse navbar-collapse " id="navbar-collapse">
             <ul class="nav navbar-nav ">
               <li class="nav-item"><a href="<?php echo esc_url( home_url( '/' ) ); ?>/pedagogie/">Pédagogie</a></li>
-              <li class="dropdown">
-                <a class="dropdown-toggle" data-toggle="dropdown" href="<?php echo esc_url( home_url( '/' ) ); ?>/category/services/">Services<span class="caret"></span></a>
-                <ul class="dropdown-menu" role="menu">
-                  <?php
-                  $query = new WP_Query(array('category_name' => 'services','order' => 'DESC')); 
-                  if($query->have_posts()) : while($query->have_posts()) : $query->the_post();
-                    // Start the Loop.
-                      the_title( '<li><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></li>' );
-                    endwhile;
-                    endif;
-                    wp_reset_postdata();
-                  ?>
-                </ul>
-              </li>
-              <li class="dropdown">
-                <a class="dropdown-toggle" data-toggle="dropdown" href="<?php echo esc_url( home_url( '/' ) ); ?>/category/infos/">Infos pratiques<span class="caret"></span></a>
-                <ul class="dropdown-menu" role="menu">
-                  <?php
-                  $query = new WP_Query(array('category_name' => 'infos','order' => 'DESC')); 
-                  if($query->have_posts()) : while($query->have_posts()) : $query->the_post();
-                    // Start the Loop.
-                      the_title( '<li><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></li>' );
-                    endwhile;
-                    endif;
-                    wp_reset_postdata();
-                  ?>
-                </ul>
-              </li>
+              <li class="nav-item"><a href="<?php echo esc_url( home_url( '/' ) ); ?>/category/services/">Services</a></li>
+              <li class="nav-item"><a href="<?php echo esc_url( home_url( '/' ) ); ?>/category/infos/">Infos pratiques</a></li>
               <li class="nav-item"><a href="<?php echo esc_url( home_url( '/' ) ); ?>/l-equipe/">L'équipe</a></li>
         		  <li class="nav-item"><a href="<?php echo esc_url( home_url( '/' ) ); ?>/contact/">Contact</a></li>
         		  <li class="nav-item"><a href="<?php echo esc_url( home_url( '/' ) ); ?>/parents/">Espace parents</a></li>
