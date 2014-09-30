@@ -25,7 +25,7 @@ get_header(); ?>
 					endif;
 				?>
 			</header><!-- .archive-header -->
-			
+			<div class="row">
 			<?php
 					// Start the Loop.
 
@@ -40,6 +40,7 @@ get_header(); ?>
 
 				endif;
 			?>
+			</div>
 		</div>
 	</div>
 </div>

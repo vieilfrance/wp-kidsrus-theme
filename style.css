@@ -9,7 +9,9 @@ Tags: kidsrus, responsive
 License: GNU General Public License v2.0
 License URI: TODO
 */
-
+.kidsrus {
+	margin-top: 10px !important;
+	}
 
 body,
 button,
@@ -41,7 +43,7 @@ font-size: 60px;
 text-align: center;
 }
 
-.entry-title {
+.entry-title, .archive-title {
 font-family: 'Roboto', sans-serif;
 font-weight: 800;
 font-size: 48px;
@@ -88,17 +90,7 @@ color: #444;
 font-weight: 700;
 }
 
-.nav-item , .dropdown{
-font-family: 'Roboto', sans-serif;
-margin-left:2px;
-margin-right:2px;
-background-color: #CCC;
-}
 
-.nav-item:hover , .dropdown:hover{
-background-color: #ffcb00;
-color: #FFF;
-}
 
 .footer-center {
 font-family: 'Roboto', sans-serif;
@@ -117,17 +109,28 @@ padding-left: 15px;
 padding-right: 15px;
 }
 
-.navbar {
-margin-bottom: 0px;
 
+
+.form-group {
+margin-bottom:0px;
 }
 
-.navbar-default {
-border-top-color:#FFF;
-border-bottom-color:#FFF;
-border-left-color:#FFF;
-border-right-color:#FFF;
-background-color: #FFF;
+
+
+.logo {
+text-align: center;
+}
+
+.no-padding {
+	padding-right: 0px;
+	padding-left: 0px;
+}
+
+.navbar {
+margin-bottom: 0px;
+}
+.navbar-nav {
+float:none;
 }
 
 .navbar-brand {
@@ -139,19 +142,85 @@ float:none;
 margin : 0 auto; 
 }
 
-.form-group {
-margin-bottom:0px;
-}
-
 .navbar-collapse {
 text-align: center;
 }
 
-.logo {
-text-align: center;
+.nav-item {
+font-family: 'Roboto', sans-serif;
+font-size: 18px;
+margin-left:auto;
+margin-right:auto;
+
 }
 
-.no-padding {
-	padding-right: 0px;
-	padding-left: 0px;
+/* navbar */
+.navbar-kidsrus {
+    background-color: #FFF;
+    border-color: #FFF;
+}
+/* title */
+.navbar-kidsrus .navbar-brand {
+    color: #777;
+}
+.navbar-kidsrus .navbar-brand:hover,
+.navbar-kidsrus .navbar-brand:focus {
+    color: #5E5E5E;
+}
+/* link */
+.navbar-kidsrus .navbar-nav > li > a {
+    color: #777;
+}
+.navbar-kidsrus .navbar-nav > li > a:hover,
+.navbar-kidsrus .navbar-nav > li > a:focus {
+    color: #FFF;
+    background-color: #F78181;
+}
+.navbar-kidsrus .navbar-nav > .active > a, 
+.navbar-kidsrus .navbar-nav > .active > a:hover, 
+.navbar-kidsrus .navbar-nav > .active > a:focus {
+    color: #FFF;
+    background-color: #F78181;
+}
+.navbar-kidsrus .navbar-nav > .open > a, 
+.navbar-kidsrus .navbar-nav > .open > a:hover, 
+.navbar-kidsrus .navbar-nav > .open > a:focus {
+    color: #FFF;
+    background-color: #F78181;
+}
+/* caret */
+.navbar-kidsrus .navbar-nav > .dropdown > a .caret {
+    border-top-color: #777;
+    border-bottom-color: #777;
+}
+.navbar-kidsrus .navbar-nav > .dropdown > a:hover .caret,
+.navbar-kidsrus .navbar-nav > .dropdown > a:focus .caret {
+    border-top-color: #333;
+    border-bottom-color: #333;
+}
+.navbar-kidsrus .navbar-nav > .open > a .caret, 
+.navbar-kidsrus .navbar-nav > .open > a:hover .caret, 
+.navbar-kidsrus .navbar-nav > .open > a:focus .caret {
+    border-top-color: #555;
+    border-bottom-color: #555;
+}
+/* mobile version */
+.navbar-kidsrus .navbar-toggle {
+    border-color: #DDD;
+}
+.navbar-kidsrus .navbar-toggle:hover,
+.navbar-kidsrus .navbar-toggle:focus {
+    background-color: #DDD;
+}
+.navbar-kidsrus .navbar-toggle .icon-bar {
+    background-color: #CCC;
+}
+@media (max-width: 767px) {
+    .navbar-kidsrus .navbar-nav .open .dropdown-menu > li > a {
+        color: #777;
+    }
+    .navbar-kidsrus .navbar-nav .open .dropdown-menu > li > a:hover,
+    .navbar-kidsrus .navbar-nav .open .dropdown-menu > li > a:focus {
+        color: #333;
+    }
 }

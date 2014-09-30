@@ -10,7 +10,7 @@
  */
 ?>
 <!DOCTYPE html>
-<html lang="fr"> <!-- TODO langage -->
+<html lang="fr" class="kidsrus"> <!-- TODO langage -->
   <head>
   <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <title><?php bloginfo('name'); ?> | <?php wp_title(''); ?></title>
@@ -26,7 +26,7 @@
   </head>
   <body>
   <div class="site">
-  <nav class="navbar navbar-default" role="navigation">
+  <nav class="navbar navbar-kidsrus" role="navigation">
     <div class="container no-padding">
       <div class="row">
         <div class="col-xs-12 logo">
@@ -38,9 +38,8 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-xs-12 col-lg-2">
-        </div>
-        <div class="col-xs-12 hidden-lg">
+
+        <div class="col-xs-12">
           <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
               <span class="sr-only">Toggle navigation</span>
@@ -50,7 +49,7 @@
             </button>
           </div>
         </div>
-        <div class="col-xs-12 col-lg-8">
+        <div class="col-xs-12 col-lg-8 col-lg-offset-2">
           <div class="collapse navbar-collapse " id="navbar-collapse">
             <ul class="nav navbar-nav ">
               <li class="nav-item"><a href="<?php echo esc_url( home_url( '/' ) ); ?>/pedagogie/">Pédagogie</a></li>
@@ -62,7 +61,5 @@
             </ul>
           </div>
         </div>
-	     <div class="xs-hidden col-lg-2"></div>
-	   </div>
 	 </div>
   </nav>
