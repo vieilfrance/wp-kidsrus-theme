@@ -14,6 +14,8 @@ get_header(); ?>
 		// Include the featured content template.
 		get_template_part( 'featured-content' );
 	}
+
+	get_template_part( 'content', 'home' );
 ?>
   </div>
 <?php get_footer(); ?>

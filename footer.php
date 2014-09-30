@@ -43,7 +43,7 @@
 	   		    <div class="col-xs-12 col-sm-4">
 	   		    </div>
 	   		    <div class="col-xs-12 col-sm-4">
-				<div>Copyright &copy;2014 Dupe Akiniyi</div>
+				<div>Copyright &copy;2014 Dupe Akinniyi</div>
 				<div>Site by <a href="#">David BECK</a></div>
 	   		    </div>
 	   		    <div class="col-xs-12 col-sm-4">
@@ -52,7 +52,6 @@
 		</div>
 	</footer>
 </div>
-<link href='http://fonts.googleapis.com/css?family=Roboto:300,700' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
 
 </body>
