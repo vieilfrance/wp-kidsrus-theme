@@ -7,8 +7,8 @@
  * @since Kidsrus 1.0
  */
 ?>
-<div class="featured-thumbnail img-center">
+<div class="featured-thumbnail">
 	<?php
-	the_post_thumbnail('full',array('class' => 'img-responsive img-center')); 
+	the_post_thumbnail('full'); 
 	?>
 </div>

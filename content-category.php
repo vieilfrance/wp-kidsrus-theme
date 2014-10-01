@@ -24,10 +24,15 @@ else :
 	?>
 		<?php printf( '<a href="%s" rel="bookmark">', esc_url( get_permalink() ) ); ?>
 		<div class="col-xs-12 col-sm-4">
+		<div class="center">
 	<?php 
 	the_post_thumbnail("thumbnail"); 
+	?>
+	</div><div class="center">
+	<?php 
 	the_title( '<h1 >', '</h1>' );
 	?>
+		</div>
 		</div>
 		</a>
 

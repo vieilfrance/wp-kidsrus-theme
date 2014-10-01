@@ -24,14 +24,40 @@ textarea {
 	line-height: 1.5;
 }
 
+img {
+	max-width:100%;
+	height: auto;
+}
+
 .site {
 background : #FDF url(assets/bg.png)  ;
 width: 100%;	
 height:100%;
 }
 
+.avatar-block {
+  overflow: auto;
+  width: 100%;
+
+}
+
+.avatar-wrap {
+width: 75px;
+height: 75px;
+border-radius: 42px;
+position: relative;
+display:block;
+}
+
+.avatar {
+border-radius: 42px;
+position: relative;
+-webkit-transition: all 0.2s ease-out;
+}
+
 .featured-thumbnail {
 border: 7px solid #6DD286;
+border: 7px solid #CCC;
 }
 
 .featured-title {
@@ -49,6 +75,7 @@ font-weight: 800;
 font-size: 48px;
 color: #6DD286;
 margin-bottom: 25px;
+margin-top:0px;
 }
 
 .featured-content {
@@ -62,9 +89,11 @@ margin-top: 100px;
 background-color: #000;
 }
 
-.img-center {
-margin-right: auto;
-margin-left: auto;
+.img-center, .img.wp-post-image, .wp-img-52 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+ 	border: 7px solid #CCC;   
 }
 
 .img-home {
@@ -116,9 +145,15 @@ margin-bottom:0px;
 }
 
 
-
-.logo {
+.side {
+	background-color: #EEE;
+	padding-top:15px;
+}
+.center, .logo {
 text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .no-padding {
