@@ -22,18 +22,8 @@ get_header(); ?>
 		</div>
 		<div class="col-xs-12 col-md-4">
 			<div class="side ">
-				<div class="avatar-block">
-				<div class="avatar-wrap">
-					<img class="avatar " src="<?php echo get_template_directory_uri(); ?>/assets/avatar.jpg"></img>
-				</div>
-				<div class="avatar-title"><h3>Qui suis-je ?</h3>
-				</div>
-			</div>
-				<p>
-					kdifjifjosjhfofjj jfdfjdfj  j jkjfk djfk qj
-				</p>
+				<?php get_template_part( 'sidebar', 'home' ); ?>
 
-			</div>
 		</div>
 	</div>
   </div>

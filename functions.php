@@ -16,6 +16,10 @@ if ( ! function_exists( 'kidsrus_setup' ) ) :
 			'max_posts' => 6,
 		) );
 
+		register_nav_menus( array(
+		    'primary' => __( 'Primary Menu', 'kidsrus' ),
+		) );
+
 		add_filter( 'wp_title', 'baw_hack_wp_title_for_home' );
 		function baw_hack_wp_title_for_home( $title )
 		{
@@ -55,4 +59,5 @@ function kidsrus_has_featured_posts() {
 if ( ! class_exists( 'Featured_Content' ) && 'plugins.php' !== $GLOBALS['pagenow'] ) {
 	require get_template_directory() . '/inc/featured-content.php';
 }
+
 ?>

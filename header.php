@@ -29,7 +29,7 @@
   <body>
   <div class="site">
   <nav class="navbar navbar-kidsrus" role="navigation">
-    <div class="container no-padding">
+    <div class="container">
       <div class="row">
         <div class="col-xs-12 logo">
           <div class="logo">
@@ -39,8 +39,7 @@
           </div>
         </div>
       </div>
-      <div class="row">
-
+      <div class="row white">
         <div class="col-xs-12">
           <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
@@ -52,16 +51,17 @@
           </div>
         </div>
         <div class="col-xs-12 col-lg-8 col-lg-offset-2">
-          <div class="collapse navbar-collapse " id="navbar-collapse">
-            <ul class="nav navbar-nav ">
-              <li class="nav-item"><a href="<?php echo esc_url( home_url( '/' ) ); ?>/pedagogie/">Pédagogie</a></li>
-              <li class="nav-item"><a href="<?php echo esc_url( home_url( '/' ) ); ?>/category/services/">Services</a></li>
-              <li class="nav-item"><a href="<?php echo esc_url( home_url( '/' ) ); ?>/category/infos/">Infos pratiques</a></li>
-              <li class="nav-item"><a href="<?php echo esc_url( home_url( '/' ) ); ?>/l-equipe/">L'équipe</a></li>
-        		  <li class="nav-item"><a href="<?php echo esc_url( home_url( '/' ) ); ?>/contact/">Contact</a></li>
-        		  <li class="nav-item"><a href="<?php echo esc_url( home_url( '/' ) ); ?>/parents/">Espace parents</a></li>
-            </ul>
-          </div>
+              <?php wp_nav_menu( array(
+                'menu'              => 'primary',
+                'theme_location'    => 'primary',
+                'depth'             => 2,
+                'container'         => 'div',
+                'container_class'   => 'collapse navbar-collapse',
+                'container_id'      => 'bs-example-navbar-collapse-1',
+                'menu_class'        => 'nav navbar-nav',
+                'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
+                'walker'            => new wp_bootstrap_navwalker())
+            ); ?>
         </div>
 	 </div>
   </nav>
