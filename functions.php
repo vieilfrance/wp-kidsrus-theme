@@ -1,4 +1,6 @@
 <?php
+// Register Custom Navigation Walker
+require_once('wp_bootstrap_navwalker.php');
 
 if ( ! function_exists( 'kidsrus_setup' ) ) :
 
