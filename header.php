@@ -34,7 +34,7 @@
         <div class="col-xs-12 logo">
           <div class="logo">
             <a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/kidzrus-320.jpg"></img>
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/kidzrus.jpg"></img>
             </a>
           </div>
         </div>
