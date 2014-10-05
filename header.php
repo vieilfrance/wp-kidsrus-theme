@@ -34,7 +34,7 @@
         <div class="col-xs-12 logo">
           <div class="logo">
             <a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/kidzrus.jpg"></img>
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/logo.jpg"></img>
             </a>
           </div>
         </div>
@@ -57,7 +57,7 @@
                 'depth'             => 2,
                 'container'         => 'div',
                 'container_class'   => 'collapse navbar-collapse',
-                'container_id'      => 'bs-example-navbar-collapse-1',
+                'container_id'      => 'navbar-collapse',
                 'menu_class'        => 'nav navbar-nav',
                 'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
                 'walker'            => new wp_bootstrap_navwalker())

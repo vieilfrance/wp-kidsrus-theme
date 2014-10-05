@@ -12,7 +12,7 @@
 	<?php
 if ( is_single() ) :
 	?>
-		<div class="col-xs-12 col-sm-4">
+		<div class="col-lg-12 col-sm-4">
 	<?php 
 	the_post_thumbnail(array(100, 100)); 
 	the_title( '<h1 >', '</h1>' );
@@ -23,16 +23,26 @@ if ( is_single() ) :
 else :
 	?>
 		<?php printf( '<a href="%s" rel="bookmark">', esc_url( get_permalink() ) ); ?>
-		<div class="col-xs-12 col-sm-4">
-		<div class="center">
-	<?php 
-	the_post_thumbnail("thumbnail"); 
-	?>
-	</div><div class="center">
-	<?php 
-	the_title( '<h1 >', '</h1>' );
-	?>
-		</div>
+		<div class="col-lg-12">
+			<div class="content">
+				<div class="content-thumbnail">
+				<?php 
+				the_post_thumbnail("thumbnail"); 
+				?>
+				</div>
+				<div class="content-paragraph">
+					<div class="content-catch">
+						<?php 
+						the_title( '<h1 >', '</h1>' );
+						?>
+					</div>
+					<div class="content-excerpt">
+						<?php
+						the_excerpt();
+						?>
+					</div>
+				</div>
+			</div>
 		</div>
 		</a>
 

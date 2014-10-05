@@ -13,7 +13,7 @@
 	<footer class="">
 		<div class="container invert-footer">
 			<div class="row footer-center">
-				<div class="col-xs-12 col-sm-5">
+				<div class="col-xs-12 col-sm-5 footer-block">
 					<div>Adresse crêche montessori dupe
 					blablabla adresse
 					blabla zipcode
@@ -23,21 +23,19 @@
 					+32 034355454
 					</div>
 				</div>
-				<div class="col-xs-12 col-sm-5">
+				<div class="col-xs-12 col-sm-5 footer-block">
 					<div><a href="<?php echo esc_url( home_url( '/' ) ); ?>/terms-conditions/">Terms &amp; Conditions</a></div>
 					<div><a href="<?php echo esc_url( home_url( '/' ) ); ?>/credits/">Crédits</a></div>
 					<div><a href="mail-to:contact@kidzrus.be">contact@kidzrus.be</a></div>
 				</div>
-				<div class="col-xs-12 col-sm-2">
+				<div class="col-xs-12 col-sm-2 footer-block">
 				  <a href="http://www.facebook.com/#" title="facebook"><i class="fa fa-facebook-square fa-2x"></i></a>
-				  <a href="http://www.twitter.com/#" title="twitter"><i class="fa fa-twitter-square fa-2x"></i></a>
-				  <a href="http://www.instagram.com/#" title="instagram"><i class="fa fa-instagram fa-2x"></i></a>
 	   		    </div>
 			</div>
 		</div>
 	</footer>
 
-	<footer class="">
+	<footer>
 		<div class="container grey-footer">
 			<div class="row footer-center">
 	   		    <div class="col-xs-12 col-sm-4">
@@ -53,13 +51,5 @@
 	</footer>
 </div>
 <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=210883042324482&version=v2.0";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
 </body>
 </html>

@@ -24,6 +24,7 @@ get_header(); ?>
 			<div class="side ">
 				<?php get_template_part( 'sidebar', 'home' ); ?>
 
+			</div>
 		</div>
 	</div>
   </div>

@@ -8,20 +8,20 @@
  * @subpackage Kidsrus
  * @since Kidsrus 1.0
  */
-
 ?>
-
-<?php 
-                  $query = new WP_Query(array('tag' => 'side')); 
-                  if($query->have_posts()) : while($query->have_posts()) : $query->the_post();
+<h2>Articles associés</h2>
+<?php
+                  if(have_posts()) : while(have_posts()) : the_post();
                     // Start the Loop.
 ?>
 			<div>
-				<?php the_content(); ?>
+				<?php
+				the_title( '<h3><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h3>' );
+				?>
 			</div>
 <?php 
                     endwhile;
                     endif;
-                    wp_reset_postdata();
+
 
 ?>	
