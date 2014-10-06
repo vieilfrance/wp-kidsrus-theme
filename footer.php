@@ -19,8 +19,8 @@
 					blabla zipcode
 					<a href="#">Google maps</a>
 					</div>
-					<div>Téléphone crêche montessori dupe
-					+32 034355454
+					<div>Nous contacter par téléphone
+					+32 0473557930
 					</div>
 				</div>
 				<div class="col-xs-12 col-sm-5 footer-block">

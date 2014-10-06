@@ -26,22 +26,16 @@ else :
 		<div class="col-lg-12">
 			<div class="content">
 				<div class="content-thumbnail">
+					<?php 
+					the_post_thumbnail("thumbnail"); 
+					?>
+				</div>
 				<?php 
-				the_post_thumbnail("thumbnail"); 
+				the_title( '<h1 >', '</h1>' );
 				?>
-				</div>
-				<div class="content-paragraph">
-					<div class="content-catch">
-						<?php 
-						the_title( '<h1 >', '</h1>' );
-						?>
-					</div>
-					<div class="content-excerpt">
-						<?php
-						the_excerpt();
-						?>
-					</div>
-				</div>
+				<?php
+				the_excerpt();
+				?>
 			</div>
 		</div>
 		</a>

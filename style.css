@@ -69,6 +69,10 @@ font-size: 60px;
 text-align: center;
 }
 
+.entry-header, .archive-header {
+    margin-top:15px;
+}
+
 .entry-title, .archive-title {
 font-family: 'Roboto', sans-serif;
 font-weight: 800;
@@ -80,6 +84,10 @@ margin-top:0px;
 
 .featured-content {
 margin-top: 100px;
+}
+
+.main {
+
 }
 
 .content {
@@ -178,11 +186,17 @@ margin-bottom:0px;
     font-size: 14px;
 }
 
-.center, .logo {
-text-align: center;
+.center {
+    text-align: center;
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+
+.logo {
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
 }
 
 .no-padding {
@@ -190,12 +204,13 @@ text-align: center;
 	padding-left: 0px;
 }
 
-
 .navbar {
 margin-bottom: 0px;
 }
-.navbar-nav {
+
+.navbar-nav, .navbar-nav > li {
 float:none;
+width:auto;
 }
 
 .navbar-brand {
@@ -213,10 +228,9 @@ text-align: center;
 
 .nav-item {
 font-family: 'Roboto', sans-serif;
-font-size: 18px;
+font-size: 22px;
 margin-left:auto;
 margin-right:auto;
-
 }
 
 .row-nav {
@@ -225,8 +239,6 @@ background-color: #FFF;
 
 /* navbar */
 .navbar-kidsrus {
-
-
 }
 /* title */
 .navbar-kidsrus .navbar-brand {
@@ -239,6 +251,7 @@ background-color: #FFF;
 /* link */
 .navbar-kidsrus .navbar-nav > li > a {
     color: #777;
+
 }
 .navbar-kidsrus .navbar-nav > li > a:hover,
 .navbar-kidsrus .navbar-nav > li > a:focus {
@@ -284,12 +297,18 @@ background-color: #FFF;
 .navbar-kidsrus .navbar-toggle .icon-bar {
     background-color: #CCC;
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
     .navbar-kidsrus .navbar-nav .open .dropdown-menu > li > a {
         color: #777;
     }
     .navbar-kidsrus .navbar-nav .open .dropdown-menu > li > a:hover,
     .navbar-kidsrus .navbar-nav .open .dropdown-menu > li > a:focus {
         color: #333;
+    }
+}
+
+@media (min-width: 768px) {
+    .top-space {
+        padding-top:30px;
     }
 }

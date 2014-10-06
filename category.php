@@ -9,14 +9,17 @@
 
 get_header(); ?>
 
-<div class="container white">
-	<div class="row">
-		<div class="col-xs-12 col-md-8">
+<div class="site">
+<div class="container top-space">
+	<div class="row white">
+  		<div class="col-xs-12 col-md-3">
+  			<?php get_template_part('nav'); ?>
+  		</div>
+		<div class="col-xs-12 col-md-6 main">
 
 			<?php if ( have_posts() ) : ?>
 			<header class="archive-header">
-				<h1 class="archive-title"><?php printf( __( '%s', 'twentyfourteen' ), single_cat_title( '', false ) ); ?></h1>
-
+				<h1 class="archive-title"><?php printf( __( '%s', 'kidsrus' ), single_cat_title( '', false ) ); ?></h1>
 				<?php
 					// Show an optional term description.
 					$term_description = term_description();
@@ -42,7 +45,7 @@ get_header(); ?>
 			?>
 			</div>
 		</div>
-		<div class="col-xs-12 col-md-4">
+		<div class="col-xs-12 col-md-3">
 			<div class="side ">
 				<?php get_template_part( 'sidebar', 'home' ); ?>
 			</div>
