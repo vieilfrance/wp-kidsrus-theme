@@ -29,7 +29,8 @@
 					<div><a href="mail-to:contact@kidzrus.be">contact@kidzrus.be</a></div>
 				</div>
 				<div class="col-xs-12 col-sm-2 footer-block">
-				  <a href="http://www.facebook.com/#" title="facebook"><i class="fa fa-facebook-square fa-2x"></i></a>
+				  <a href="http://www.facebook.com/#" title="facebook"><i class="fa fa-facebook-square fa-2x"></i></a>&nbsp;
+				  <a href="<?php bloginfo('rss2_url'); ?>" title="RSS"><i class="fa fa-rss fa-2x"></i></a>
 	   		    </div>
 			</div>
 		</div>

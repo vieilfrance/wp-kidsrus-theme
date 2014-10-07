@@ -87,18 +87,29 @@ margin-top: 100px;
 }
 
 .main {
-
+margin-top:15px;
 }
 
 .content {
     width:100%;
     min-height: 150px;
+    background-color: #EEE;
+    border-radius: 5px;
+}
+
+.content > p {
+    font-size: 14px;
+}
+
+.content > h2 {
+    margin-top:5px;
+    padding-top:5px;
 }
 
 .content-thumbnail {
     float:left;
-    padding-right:30px;
-    padding-left:15px;
+    padding-right:15px;
+    padding-left:0px;
     line-height: 1.8;
 }
 

@@ -25,7 +25,7 @@ if ( ! function_exists( 'kidsrus_setup' ) ) :
 		add_filter( 'wp_title', 'baw_hack_wp_title_for_home' );
 
 		function custom_excerpt_length( $length ) {
-			return 25;
+			return 27;
 			}
 		add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
 
