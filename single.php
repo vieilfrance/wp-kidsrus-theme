@@ -33,9 +33,7 @@ get_header(); ?>
 				</div><!-- #content -->
 			</div>
 			<div class="col-xs-12 col-md-3">
-				<div class="side ">
 					<?php get_template_part( 'sidebar', 'home' ); ?>
-				</div>
 					<?php get_template_part( 'sidebar', 'single' ); ?>
 			</div>
 		</div>

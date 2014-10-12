@@ -15,14 +15,7 @@
 		<div class="container invert-footer">
 			<div class="row footer-center">
 				<div class="col-xs-12 col-sm-5 footer-block">
-					<div>Adresse crêche montessori dupe
-					blablabla adresse
-					blabla zipcode
-					<a href="#">Google maps</a>
-					</div>
-					<div>Nous contacter par téléphone
-					+32 0473557930
-					</div>
+						<?php get_template_part( 'footer', 'content' ); ?>
 				</div>
 				<div class="col-xs-12 col-sm-5 footer-block">
 					<div><a href="<?php echo esc_url( home_url( '/' ) ); ?>/terms-conditions/">Terms &amp; Conditions</a></div>

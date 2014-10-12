@@ -1,6 +1,6 @@
 <?php
 /**
- * The Template for displaying homepagee sidebar
+ * The Template for displaying footer content
  *
  * @package WordPress
  * @subpackage Kidsrus
@@ -10,19 +10,17 @@
 
 ?>
 <?php 
-                  $query = new WP_Query(array('tag' => 'side')); 
+                  $query = new WP_Query(array('tag' => 'footer')); 
                   if($query->have_posts()) :
-				?><div class="side "><?php
-                 	 while($query->have_posts()) : $query->the_post();
+
+					 $query->the_post();
                     // Start the Loop.
 ?>
 
 			<div>
 				<?php the_content(); ?>
 			</div>
-<?php 
-                    endwhile;
-				?></div><?php
+					<?php
                     endif;
                     wp_reset_postdata();
 
