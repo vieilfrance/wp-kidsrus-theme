@@ -215,6 +215,18 @@ margin-bottom:0px;
 	padding-left: 0px;
 }
 
+.lang , .lang a  {
+font-family: 'Roboto', sans-serif;
+font-size: 18px;
+    color: #777;
+}
+
+.lang a:hover , .lang a:focus {
+color: #FFF;
+background-color: #F78181;
+}
+
+
 .navbar {
 margin-bottom: 0px;
 }

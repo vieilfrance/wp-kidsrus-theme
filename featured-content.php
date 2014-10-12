@@ -5,6 +5,7 @@
  * @package WordPress
  * @subpackage Kidsrus
  * @since Kidsrus 1.0
+ * @author David Beck - @vieilfrance
  */
 ?>
 <div>

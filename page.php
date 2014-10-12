@@ -1,10 +1,11 @@
 <?php
 /**
- * The Template for displaying all single posts
+ * The Template for displaying all pages
  *
  * @package WordPress
  * @subpackage Kidsrus
  * @since Kidsrus 1.0
+ * @author: David Beck - @vieilfrance
  */
 
 get_header(); ?>

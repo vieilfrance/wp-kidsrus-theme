@@ -1,12 +1,11 @@
 <?php
 /**
- * The default template for displaying content
- *
- * Used for both single and index/archive/search.
+ * The Template for displaying homepagee sidebar
  *
  * @package WordPress
  * @subpackage Kidsrus
  * @since Kidsrus 1.0
+ * @author: David Beck - @vieilfrance
  */
 
 ?>

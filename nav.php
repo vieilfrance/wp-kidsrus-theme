@@ -1,8 +1,28 @@
+<?php
+/**
+ * The Template for displaying the navigation block
+ *
+ * @package WordPress
+ * @subpackage Kidsrus
+ * @since Kidsrus 1.0
+ * @author: David Beck - @vieilfrance
+ */
+?>
+
   			<nav class="navbar navbar-kidsrus" role="navigation">
 			<div class="">
 	            <a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>">
 	            <img src="<?php echo get_template_directory_uri(); ?>/assets/logo.jpg"></img>
 	            </a>
+          	</div>
+          	<div class="">
+				<div class="row white">
+		        	<div class="col-xs-12 lang"><center>
+		          		<a href="/fr">Fr</a>&nbsp;/&nbsp;
+		          		<a href="/en">En</a>&nbsp;/&nbsp;
+		          		<a href="/nl">Nl</a></center>
+		          	</div>
+		        </div>
           	</div>
 		    <div class="">
 		      <div class="row white">

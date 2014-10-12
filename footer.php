@@ -8,6 +8,7 @@
  * @package WordPress
  * @subpackage kidsrus
  * @since Kidsrus 1.0
+ * @author David Beck - @vieilfrance
  */
 ?>
 	<footer class="">
