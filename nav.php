@@ -12,17 +12,8 @@
   			<nav class="navbar navbar-kidsrus" role="navigation">
 			<div class="">
 	            <a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>">
-	            <img src="<?php echo get_template_directory_uri(); ?>/assets/logo.jpg"></img>
+	            <img src="<?php echo get_template_directory_uri(); ?>/assets/logo.png"></img>
 	            </a>
-          	</div>
-          	<div class="">
-				<div class="row white">
-		        	<div class="col-xs-12 lang"><center>
-		          		<a href="/fr">Fr</a>&nbsp;/&nbsp;
-		          		<a href="/en">En</a>&nbsp;/&nbsp;
-		          		<a href="/nl">Nl</a></center>
-		          	</div>
-		        </div>
           	</div>
 		    <div class="">
 		      <div class="row white">
@@ -53,4 +44,14 @@
 
 			   </div>
 		    </div>
+          	<div class="hidden-xs">
+          		<div class="line"></div>
+				<div class="row white">
+		        	<div class="col-xs-12  lang"><center>
+		          		<a href="/fr">Fr</a>&nbsp;/&nbsp;
+		          		<a href="/en">En</a>&nbsp;/&nbsp;
+		          		<a href="/nl">Nl</a></center>
+		          	</div>
+		        </div>
+          	</div>
 		   	</nav>

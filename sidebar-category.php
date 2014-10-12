@@ -9,11 +9,15 @@
  */
 
 ?>
+<?php
+                  if(have_posts()) : 
+?>
 <h2>Articles associés</h2>
 <?php
-                  if(have_posts()) : while(have_posts()) : the_post();
+                  	while(have_posts()) : the_post();
                     // Start the Loop.
 ?>
+
 			<div>
 				<?php
 				the_title( '<h3><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h3>' );

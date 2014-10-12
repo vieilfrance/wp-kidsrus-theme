@@ -38,6 +38,9 @@
 	   		    <div class="col-xs-12 col-sm-4">
 				<div>Copyright &copy;2014 Dupe Akinniyi</div>
 				<div>Site by <a href="#">David BECK</a></div>
+	        	<div class="visible-xs"><a href="/fr">Fr</a>&nbsp;/&nbsp;<a href="/en">En</a>&nbsp;/&nbsp;<a href="/nl">Nl</a></div>
+		        </div>
+          	</div>
 	   		    </div>
 	   		    <div class="col-xs-12 col-sm-4">
 	   		    </div>
